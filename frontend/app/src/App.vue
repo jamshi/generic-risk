@@ -51,7 +51,7 @@ export default {
   },
   methods: {
       fetchData() {
-          this.$http.get('/risk/all/')
+          this.$http.get('api/risk/all/')
               .then(result => { 
               this.risks = result.data
               })
