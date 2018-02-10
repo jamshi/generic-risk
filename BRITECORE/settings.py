@@ -25,7 +25,7 @@ SECRET_KEY = 'ao(x))$mg4amnzd(d8^-7dlo@8j4-_htl%$!bw0665y00o&!yi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aqueous-refuge-73233.herokuapp.com']
 
 
 # Application definition
@@ -100,6 +100,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/dist/'
+STATIC_ROOT = 'assets'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend", 'app', 'dist'),
